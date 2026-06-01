@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ BRAND | Premium Female Architecture & Apparel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MJ BRAND</div>
+        
+        <nav class="nav-menu">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#productos" class="nav-link" id="nav-prod-link">Productos</a>
+            <button class="nav-btn-link" id="nav-about-btn">¿Qué es MJ Brand?</button>
+        </nav>
+
+        <div class="navbar-actions">
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" title="Instagram">📸</a>
+                <a href="https://wa.me/573022962660?text=BIENVENID@ A MJ BRAND"
+                <a href="https://facebook.com" target="_blank" title="Facebook">👤</a>
+            </div>
+            <div class="cart-trigger" id="open-cart">
+                <span class="cart-icon">👜</span>
+                <span id="cart-counter" class="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Colección Atemporal</p>
+            <h1 class="hero-title">Elegancia & Sofisticación</h1>
+            <button id="hero-cta" class="btn-luxury">Ver Productos</button>
+        </div>
+    </section>
+
+    <main id="productos" class="products-section">
+        <div class="section-header">
+            <span class="section-badge">New In</span>
+            <h2 class="section-title">Prendas de Diseñador</h2>
+            <p class="section-subtitle">Materiales nobles seleccionados para la mujer contemporánea.</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/Gemini_Generated_Image_zegl0nzegl0nzegl.png" alt="Blusa Seda MJ">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">SETS</span>
+                    <h3>Set victoria</h3>
+                    <p class="product-material">Set en short con cierre delantero, chalequito forrado con cortes, flor tipo accesorio elaborado en la misma tela.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$169.000</span>
+                        <button class="btn-add-cart" data-id="1" data-name="Blusa de Seda 'Aura'" data-price="185000">Añadir</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/Set Pandora .jpeg" alt="Abrigo Minimalist">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Sets</span>
+                    <h3>Set Pandora</h3>
+                    <p class="product-material">Set con pretina bolsillos , y pinzas traseras, Chaleco forrado con herrajes decorativos que ajustan simulando un botón.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$175.000</span>
+                        <button class="btn-add-cart" data-id="2" data-name="Blazer 'Monarque'" data-price="290000">Añadir</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="img/Blusa Zara .jpeg" alt="Vestido Lino">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Blusa</span>
+                    <h3>Blusa Zara</h3>
+                    <p class="product-material">Blusa con cuello subido drapeada con escote en la espalda que nos aporta elegancia y comodidad.</p>
+                    <div class="product-footer">
+                        <span class="product-price">$88.000</span>
+                        <button class="btn-add-cart" data-id="3" data-name="Vestido 'Lumière'" data-price="225000">Añadir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Bolsa de Compra</h3>
+            <button id="close-cart" class="close-icon">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items-list">
+            <p class="cart-empty-text">No has añadido piezas a tu selección.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Subtotal Estimado</span>
+                <span id="cart-total-amount">$0</span>
+            </div>
+            <button class="btn-checkout" id="checkout-action">Finalizar Pedido Especial</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-brand">MJ BRAND</div>
+        <p class="footer-tagline">Redefiniendo la sofisticación femenina.</p>
+        
+        <div class="footer-nav">
+            <button class="footer-link" data-modal="modal-about">Quiénes Somos</button>
+            <button class="footer-link" data-modal="modal-privacy">Política de Privacidad</button>
+            <button class="footer-link" data-modal="modal-sizes">Guía de Tallas</button>
+            <button class="footer-link" data-modal="modal-terms">Términos de Servicio</button>
+        </div>
+        <p class="footer-copy">&copy; 2026 MJ BRAND. Todos los derechos reservados. Arquitectura digital de alta costura.</p>
+    </footer>
+
+    <div id="modal-container" class="modal-overlay">
+        <div id="modal-about" class="modal-card">
+            <button class="close-modal">&times;</button>
+            <h3>¿Qué es MJ Brand?</h3>
+            <div class="modal-scroll-body">
+                <p>MJ BRAND nació de la visión de fusionar la sastrería clásica y tradicional con las tendencias vanguardistas del Streetwear de lujo femenino.</p>
+                <p>Nuestra misión es empoderar a la mujer contemporánea a través de piezas estructuralmente perfectas, utilizando texturas fluidas y paletas neutras que resisten el paso de las temporadas.</p>
+            </div>
+        </div>
+
+        <div id="modal-privacy" class="modal-card">
+            <button class="close-modal">&times;</button>
+            <h3>Política de Privacidad</h3>
+            <div class="modal-scroll-body">
+                <p>En MJ BRAND garantizamos la confidencialidad absoluta de tus datos de perfilamiento y transacciones bancarias.</p>
+                <p>La información recopilada en este sitio se procesa únicamente con fines logísticos para el envío de tus prendas y la personalización de tu experiencia premium.</p>
+            </div>
+        </div>
+
+        <div id="modal-sizes" class="modal-card">
+            <button class="close-modal">&times;</button>
+            <h3>Guía de Tallas Premium</h3>
+            <div class="modal-scroll-body">
+                <p>Nuestras piezas cuentan con un patronaje de alta costura estructurada. Consulta la tabla general de medidas anatómicas en centímetros:</p>
+                <table class="size-table">
+                    <thead>
+                        <tr><th>Talla</th><th>Busto</th><th>Cintura</th><th>Cadera</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>S</td><td>84-88</td><td>64-68</td><td>90-94</td></tr>
+                        <tr><td>M</td><td>89-93</td><td>69-73</td><td>95-99</td></tr>
+                        <tr><td>L</td><td>94-100</td><td>74-80</td><td>100-106</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="modal-terms" class="modal-card">
+            <button class="close-modal">&times;</button>
+            <h3>Términos de Servicio</h3>
+            <div class="modal-scroll-body">
+                <p>Cada prenda adquirida en MJ BRAND es objeto de una rigurosa inspección de calidad antes de su empaquetado hermético.</p>
+                <p>Aceptamos cambios dentro de los primeros 15 días calendario posteriores a la entrega del producto, siempre que la pieza mantenga sus etiquetas intactas y no muestre signos de uso.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
